@@ -44,6 +44,9 @@
       "jsx",
       "json",
       "node"
+    ],
+    "setupFiles": [
+      "./testing/jestSetup.js"
     ]
   }
 }

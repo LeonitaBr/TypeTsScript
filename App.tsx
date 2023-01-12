@@ -9,22 +9,27 @@
  */
 
 import React from 'react';
-import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
+// import Button from './src/components/Button/Button';
+// import Label from './src/components/Label/Label';
+import LoginScreen from './src/screens/LoginScreen';
 
 const App = () => {
-  const renderItem = (item: number) => {
-    return (
-      <View>
-        <Text>{item}</Text>
-      </View>
-    );
-  };
-  const test: string = 'Heading';
-  const list: number[] = [1, 2, 4];
+  // const renderItem = (item: number) => {
+  //   return (
+  //     <View>
+  //       <Text>{item}</Text>
+  //     </View>
+  //   );
+  // };
+  // const test: string = 'Heading';
+  // const list: number[] = [1, 2, 4];
   return (
     <SafeAreaView style={styles.sectionContainer}>
-      <Text>{test}</Text>
+      <LoginScreen />
+      {/* <Label title={test} />
       <FlatList data={list} renderItem={({item}) => renderItem(item)} />
+      <Button onPressButton={() => {}} title={'Press Button'} /> */}
     </SafeAreaView>
   );
 };
