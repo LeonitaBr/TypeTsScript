@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Some component renders correctly 1`] = `
+<TextInput
+  keyboardType="numeric"
+  onChangeText={[Function]}
+  style={
+    Object {
+      "borderWidth": 1,
+      "height": 40,
+      "padding": 10,
+    }
+  }
+/>
+`;

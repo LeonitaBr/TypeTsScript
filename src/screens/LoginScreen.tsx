@@ -1,10 +1,12 @@
 import React, {memo, useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+// import {useDispatch} from 'react-redux';
 import Button from '../components/Button/Button';
 import Input from '../components/Input/Input';
 import Label from '../components/Label/Label';
 
 const LoginScreen = () => {
+  // const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -19,7 +21,9 @@ const LoginScreen = () => {
     } else if (password?.length === 0) {
       setPasswordError('password should not be empty');
     }
+    // dispatch(loginRequested({email: email, password: password}));
   };
+
   return (
     <View style={styles.container}>
       <Label labelStyles={styles.labelStyle} title={'Login'} />
